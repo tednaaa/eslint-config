@@ -1,12 +1,14 @@
+glob_matcher: doublestar
+
 pre-commit:
   commands:
     lint:
-      glob: '*.{js,ts,json,yaml,md}'
+      glob: '**/*.{js,ts,json,yaml,md}'
       run: pnpm exec eslint --fix {staged_files}
       stage_fixed: true
 
     typecheck:
-      glob: '*.ts'
+      glob: '**/*.ts'
       run: pnpm typecheck
 
     test:
