@@ -1,7 +1,7 @@
 {
 	"name": "@tednaaa/eslint-config",
 	"type": "module",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Personal ESLint config built on @antfu/eslint-config",
 	"license": "GPL-3.0-only",
 	"repository": {
