@@ -32,3 +32,12 @@ export default defineConfig({
 	},
 });
 ```
+
+> `stylistic.indent` doesn't reach Vue templates: override `vue/html-indent` too.
+
+## Formatting
+
+ESLint is the only formatter. Don't add Prettier or turn off `stylistic`.
+
+- Lint with `eslint --fix` before committing.
+- Turn off the editor's own formatter and run ESLint fixes on save instead. For Zed, copy [`.zed/settings.json`](.zed/settings.json).
