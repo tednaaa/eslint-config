@@ -11,7 +11,7 @@ const vueRules: TypedFlatConfigItem['rules'] = {
 
 	'vue/max-attributes-per-line': ['error', { singleline: { max: 5 }, multiline: { max: 1 } }],
 	'vue/first-attribute-linebreak': ['error', { singleline: 'ignore', multiline: 'below' }],
-	'vue/html-indent': ['error', 2, { attribute: 1, baseIndent: 1, closeBracket: 0, alignAttributesVertically: false, ignores: [] }],
+	'vue/html-indent': ['error', 'tab', { attribute: 1, baseIndent: 1, closeBracket: 0, alignAttributesVertically: false, ignores: [] }],
 	'vue/singleline-html-element-content-newline': 'off',
 
 	'vue/attributes-order': ['error', {
