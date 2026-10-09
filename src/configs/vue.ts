@@ -1,6 +1,7 @@
 import type { OptionsVue, TypedFlatConfigItem } from '@antfu/eslint-config';
 import { isPackageExists } from 'local-pkg';
 import { asObject } from '../utils';
+import { stylisticDefaults } from './stylistic';
 
 const VUE_PACKAGES = ['vue', 'nuxt', 'vitepress', '@slidev/cli'];
 
@@ -11,7 +12,7 @@ const vueRules: TypedFlatConfigItem['rules'] = {
 
 	'vue/max-attributes-per-line': ['error', { singleline: { max: 5 }, multiline: { max: 1 } }],
 	'vue/first-attribute-linebreak': ['error', { singleline: 'ignore', multiline: 'below' }],
-	'vue/html-indent': ['error', 'tab', { attribute: 1, baseIndent: 1, closeBracket: 0, alignAttributesVertically: false, ignores: [] }],
+	'vue/html-indent': ['error', stylisticDefaults.indent, { attribute: 1, baseIndent: 1, closeBracket: 0, alignAttributesVertically: false, ignores: [] }],
 	'vue/singleline-html-element-content-newline': 'off',
 
 	'vue/attributes-order': ['error', {
